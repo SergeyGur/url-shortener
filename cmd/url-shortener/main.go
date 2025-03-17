@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"url-shortener/internal/config"
+)
 
 func main() {
-	fmt.Println("url shortener")
+	cfg := config.MustLoad()
+	fmt.Println(cfg)
 }
